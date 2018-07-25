@@ -1,5 +1,7 @@
 ## A Code for Generating Organic Visual Metaphors for Conditional Co-occurrence
 
+![alt text](./img/bacteria_metaphor.png)
+
 About
 -----
 * Visual analytics software for identifying bottlenecks on prallel communications used MPI and finding better communication options
@@ -33,11 +35,11 @@ Usage
 
 * Run a code below in the terminal. This generates a json file that includes mesh information.
 
-  ``python3 polygon_gen.py -i input_json_file -o output_json_file``
+  `python3 polygon_gen.py -i input_json_file -o output_json_file`
 
 * You can use more parameters, including <sub>&alpha;</sub>, <sub>&beta;</sub> used in the paper. See help with
 
-  ``python3 polygon_gen.py -h``
+  `python3 polygon_gen.py -h`
 
 * You can find input and output json file examples in "sample_data" directory.
 
@@ -49,16 +51,16 @@ Usage
 ##### beta_overlap_thres.py (helper for selecting a good parameter <sub>&beta;</sub>)
 * Run a code below in the terminal. This outputs the thresholds of <sub>&beta;</sub> values for all branches for avoiding overlaps between branches. If you set smaller <sub>&beta;</sub> for running polygon_gen.py, you can generate polygons which avoid overlaps.
 
-  ``python3 beta_overlap_thres.py -i input_json_file``
+  `python3 beta_overlap_thres.py -i input_json_file`
 
 * You can use more parameters, including <sub>&alpha;</sub> used in the paper. See help with
 
-    ``python3 beta_overlap_thres.py -h``
+    `python3 beta_overlap_thres.py -h`
 
 ##### rendering_example/index.html (rendering example with WebGL)
 * Lauch index.html with some web-server. One easy way is using SimpleHTTPServer from python3.
 
-  ``python3 -m SimpleHTTPServer``
+  `python3 -m SimpleHTTPServer`
 
   Then, type ''http://localhost:8000/'' in your web-browser. After that, select index.html.
 
