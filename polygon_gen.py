@@ -7,47 +7,47 @@ from scipy import interpolate
 
 # parse args
 ap = argparse.ArgumentParser()
-ap.add_argument(
-    '-i', '--input', help='input json file', type=str, required=True)
-ap.add_argument(
-    '-o', '--output', help='output json file', type=str, default='mesh.json')
-ap.add_argument(
-    '-a',
-    '--alpha',
-    help='alpha value (for branch width)',
-    type=float,
-    default=0.0008)
-ap.add_argument(
-    '-b',
-    '--beta',
-    help='beta value (for branch fluctuation)',
-    type=float,
-    default=0.25)
-ap.add_argument(
-    '-c',
-    '--gamma',
-    help='gamma value (for branch length)',
-    type=float,
-    default=0.4)
+ap.add_argument('-i',
+                '--input',
+                help='input json file',
+                type=str,
+                required=True)
+ap.add_argument('-o',
+                '--output',
+                help='output json file',
+                type=str,
+                default='mesh.json')
+ap.add_argument('-a',
+                '--alpha',
+                help='alpha value (for branch width)',
+                type=float,
+                default=0.0008)
+ap.add_argument('-b',
+                '--beta',
+                help='beta value (for branch fluctuation)',
+                type=float,
+                default=0.25)
+ap.add_argument('-c',
+                '--gamma',
+                help='gamma value (for branch length)',
+                type=float,
+                default=0.4)
 ap.add_argument('-r', '--rep', help='recursive count', type=int, default=3)
-ap.add_argument(
-    '-ir',
-    '--inner_circle_ratio',
-    help='ratio of inner circle area',
-    type=float,
-    default=0.8)
-ap.add_argument(
-    '-bd',
-    '--branch_div',
-    help='control resolution of branches',
-    type=int,
-    default=100)
-ap.add_argument(
-    '-nd',
-    '--central_node_div',
-    help='controle resolution of central node',
-    type=int,
-    default=50)
+ap.add_argument('-ir',
+                '--inner_circle_ratio',
+                help='ratio of inner circle area',
+                type=float,
+                default=0.8)
+ap.add_argument('-bd',
+                '--branch_div',
+                help='control resolution of branches',
+                type=int,
+                default=100)
+ap.add_argument('-nd',
+                '--central_node_div',
+                help='controle resolution of central node',
+                type=int,
+                default=50)
 args = ap.parse_args()
 
 
@@ -321,5 +321,6 @@ def output_polygon_json(in_json, out_json, alpha, beta, gamma, rep,
         json.dump(out_data, f, indent=4)
 
 
-output_polygon_json(args.input, args.output, args.alpha, args.beta, args.gamma,
-                    args.rep, args.inner_circle_ratio)
+if __name__ == '__main__':
+    output_polygon_json(args.input, args.output, args.alpha, args.beta,
+                        args.gamma, args.rep, args.inner_circle_ratio)

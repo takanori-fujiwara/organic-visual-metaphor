@@ -8,20 +8,21 @@ import polygon_gen as pg
 
 # parse args
 ap = argparse.ArgumentParser()
-ap.add_argument(
-    '-i', '--input', help='input json file', type=str, required=True)
-ap.add_argument(
-    '-a',
-    '--alpha',
-    help='alpha value (for branch width)',
-    type=float,
-    default=0.0008)
-ap.add_argument(
-    '-c',
-    '--gamma',
-    help='gamma value (for branch length)',
-    type=float,
-    default=0.4)
+ap.add_argument('-i',
+                '--input',
+                help='input json file',
+                type=str,
+                required=True)
+ap.add_argument('-a',
+                '--alpha',
+                help='alpha value (for branch width)',
+                type=float,
+                default=0.0008)
+ap.add_argument('-c',
+                '--gamma',
+                help='gamma value (for branch length)',
+                type=float,
+                default=0.4)
 args = ap.parse_args()
 
 
@@ -58,7 +59,8 @@ def calc_beta_thresholds(in_json, alpha, gamma):
     return min(thresholds), thresholds
 
 
-min_thres, thresholds = calc_beta_thresholds(args.input, args.alpha, args.gamma)
+min_thres, thresholds = calc_beta_thresholds(args.input, args.alpha,
+                                             args.gamma)
 
 print("minimum thres: ", min_thres)
 print("thresholds: ", thresholds)

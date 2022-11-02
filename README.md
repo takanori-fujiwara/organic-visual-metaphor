@@ -58,9 +58,9 @@ Usage
     `python3 beta_overlap_thres.py -h`
 
 ##### rendering_example/index.html (rendering example with WebGL)
-* Lauch index.html with some web-server. One easy way is using SimpleHTTPServer from python3.
+* Lauch index.html with some web-server. One easy way is using http.server from python3.
 
-  `python3 -m SimpleHTTPServer`
+  `python3 -m http.server`
 
   Then, type ''http://localhost:8000/'' in your web-browser. After that, select index.html.
 
