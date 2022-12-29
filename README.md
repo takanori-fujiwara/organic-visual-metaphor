@@ -4,7 +4,6 @@
 
 About
 -----
-* Visual analytics software for identifying bottlenecks on prallel communications used MPI and finding better communication options
 
 * This project is derived from the paper below.     
 ***An Organic Visual Metaphor for Public Understanding of Conditional Co-occurrences***    
