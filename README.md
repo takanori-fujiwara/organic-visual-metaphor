@@ -21,7 +21,7 @@ In Proceedings of IEEE Scientific Visualization (SciVis), 2018.
 
 Requirements
 -----
-* Note: Tested on macOS High Sierra
+* Note: Tested on macOS Ventura
 * python3 (latest)
 * numpy and scipy (latest)
 * A web-browser supporting WebGL (e.g., Chrome) if looking at the rendering example
@@ -32,7 +32,7 @@ Usage
 -----
 ##### polygon_gen.py (polygon generation)
 
-* Run a code below in the terminal. This generates a json file that includes mesh information.
+* Run a code below in the terminal (replace input/out_json_file, e.g., sample_data/sample_input.json). This generates a json file that includes mesh information. 
 
   `python3 polygon_gen.py -i input_json_file -o output_json_file`
 
