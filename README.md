@@ -21,7 +21,7 @@ In Proceedings of IEEE Scientific Visualization (SciVis), 2018.
 
 Requirements
 -----
-* Note: Tested on macOS Ventura
+* Note: Tested on macOS Sequoia
 * python3 (latest)
 * numpy and scipy (latest)
 * A web-browser supporting WebGL (e.g., Chrome) if looking at the rendering example
